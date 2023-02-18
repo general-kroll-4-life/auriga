@@ -6,6 +6,9 @@
 \usepackage{fancyvrb}
 \usepackage{tikz}
 \usepackage{pgfplots}
+\usepackage{graphicx}
+
+\graphicspath{ {./assets/img/} }
 
 \ifnotes
 \setbeamertemplate{note page}[plain]
@@ -20,11 +23,11 @@
 \definecolor{blue}{RGB}{0, 118, 186}
 \definecolor{gray}{RGB}{146, 146, 146}
 
-\title{Fancy Title: Followed by Some More Text}
+\title{StackQL: head in the clouds, feet on the ground}
 
-\author{\underline{Alyssa P. Hacker} \inst{1} \and Ben Bitdiddle \inst{2} \and Lem E. Tweakit \inst{2}}
+\author{\underline{Kieran Rimmer} \inst{1} \inst{1} \and Jeffrey Aven \inst{1} \inst{3}}
 
-\institute[shortinst]{\inst{1} Some Institute \samelineand \inst{2} Another Institute}
+\institute[shortinst]{\inst{1} StackQL Studios \samelineand \inst{2} Ryuk IT \and \inst{3} Aven Solutions  }
 
 \begin{document}
 
@@ -37,6 +40,8 @@
   \end{frame}
 }
 
+\input{slides/background}
+\input{slides/philosophy}
 \input{slides/bullets}
 \input{slides/split}
 \input{slides/figure}
